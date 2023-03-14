@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/adoptFragment"
+        android:icon="@drawable/ic_adopt2"
+        android:title="Adopt" />
+    <item
+        android:id="@+id/safetyFragment"
+        android:icon="@drawable/ic_safety"
+        android:title="Safety" />
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/blogFragment"
+        android:icon="@drawable/ic_blog2"
+        android:title="Blog" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+</menu>

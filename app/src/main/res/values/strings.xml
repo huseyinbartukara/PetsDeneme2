@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PetsDeneme2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="underlinekaydol"> <u>Kaydol</u></string>
+    <string name="underlinegirisyap"> <u>Giriş Yap</u></string>
+</resources>

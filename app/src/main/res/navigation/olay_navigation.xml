@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/olay_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/adoptFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.AdoptFragment"
+        android:label="fragment_adopt"
+        tools:layout="@layout/fragment_adopt" >
+        <action
+            android:id="@+id/ilanVermeGecis"
+            app:destination="@id/adoptIlanVermeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blogFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.BlogFragment"
+        android:label="fragment_blog"
+        tools:layout="@layout/fragment_blog" >
+        <action
+            android:id="@+id/blogEkleGecis"
+            app:destination="@id/blogEkleFragment" />
+        <action
+            android:id="@+id/blogDetayGecis"
+            app:destination="@id/blogDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/kullaniciProfileFragmentGecis"
+            app:destination="@id/kullaniciProfileDuzenleFragment" />
+        <action
+            android:id="@+id/hayvanProfileDuzenleGecis"
+            app:destination="@id/hayvanProfileDuzenleFragment" />
+        <action
+            android:id="@+id/postEkleFragmentGecis"
+            app:destination="@id/postEkleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/safetyFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.SafetyFragment"
+        android:label="fragment_safety"
+        tools:layout="@layout/fragment_safety" />
+    <fragment
+        android:id="@+id/adoptIlanVermeFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.AdoptIlanVermeFragment"
+        android:label="fragment_adopt_ilan_verme"
+        tools:layout="@layout/fragment_adopt_ilan_verme" >
+        <action
+            android:id="@+id/adoptFragmentGecis"
+            app:destination="@id/adoptFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blogEkleFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.BlogEkleFragment"
+        android:label="fragment_blog_ekle"
+        tools:layout="@layout/fragment_blog_ekle" >
+        <action
+            android:id="@+id/blogFragmentGecis"
+            app:destination="@id/blogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blogDetayFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.BlogDetayFragment"
+        android:label="fragment_blog_detay"
+        tools:layout="@layout/fragment_blog_detay">
+
+        <argument
+            android:name="blog"
+            app:argType="com.example.petsdeneme2.ui.model.BlogEkle" />
+    </fragment>
+    <fragment
+        android:id="@+id/kullaniciProfileDuzenleFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.KullaniciProfileDuzenleFragment"
+        android:label="fragment_kullanici_profile_duzenle"
+        tools:layout="@layout/fragment_kullanici_profile_duzenle" >
+        <action
+            android:id="@+id/profileFragmentGecis"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hayvanProfileDuzenleFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.HayvanProfileDuzenleFragment"
+        android:label="fragment_hayvan_profile_duzenle"
+        tools:layout="@layout/fragment_hayvan_profile_duzenle" >
+        <action
+            android:id="@+id/profileFragmetnGecisHayvan"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postEkleFragment"
+        android:name="com.example.petsdeneme2.ui.fragment.PostEkleFragment"
+        android:label="fragment_post_ekle"
+        tools:layout="@layout/fragment_post_ekle" >
+        <action
+            android:id="@+id/profileFragmentGecisPost"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>
